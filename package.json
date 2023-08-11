@@ -2,9 +2,10 @@
   "name": "nodejs-sandbox",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "clean": "rimraf ./.build",
+    "build": "npm run clean && tsc",
+    "start": "npm run build && node index.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,11 @@
   },
   "homepage": "https://github.com/codesandbox-app/static-template#readme",
   "devDependencies": {
-    "nodemon": "^2.0.20"
+    "@types/node": "^20.4.9",
+    "nodemon": "^3.0.1",
+    "rimraf": "^5.0.1"
+  },
+  "dependencies": {
+    "typescript": "^5.1.6"
   }
 }

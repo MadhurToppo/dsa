@@ -1,4 +1,4 @@
-const isPalindrome = (str) => {
+const isPalindrome = (str: string) => {
   let left = 0;
   let right = str.length - 1;
   const characters =

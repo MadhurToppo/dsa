@@ -1,4 +1,4 @@
-var isPangram = function (sentence) {
+var isPangram = function(sentence: string) {
   let str = sentence.toLowerCase();
   let alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
 

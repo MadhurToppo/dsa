@@ -1,4 +1,4 @@
-var mySqrt = function (x) {
+var mySqrt = function(x: number) {
   if (x < 2) {
     return x;
   }

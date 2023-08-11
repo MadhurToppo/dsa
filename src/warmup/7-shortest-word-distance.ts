@@ -1,4 +1,8 @@
-const shortestDistance = function (words, word1, word2) {
+const shortestDistance = function(
+  words: string[],
+  word1: string,
+  word2: string,
+) {
   let distance = words.length;
   let position1 = -1;
   let position2 = -1;

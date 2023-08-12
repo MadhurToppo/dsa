@@ -1,11 +1,11 @@
-const shortestDistance = function(
-  words: string[],
+const shortestDistance = (
+  words: Array<string>,
   word1: string,
   word2: string,
-) {
-  let distance = words.length;
-  let position1 = -1;
-  let position2 = -1;
+): number => {
+  let distance: number = words.length;
+  let position1: number = -1;
+  let position2: number = -1;
 
   for (let i = 0; i < words.length; i++) {
     if (words[i] === word1) {
@@ -20,7 +20,6 @@ const shortestDistance = function(
   return distance;
 };
 
-// Test Cases
 // Test case 1
 const words1 = [
   "the",

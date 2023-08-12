@@ -1,4 +1,4 @@
-const getTwoSum = (nums: Array<number>, target: number) => {
+const getTwoSum = (nums: Array<number>, target: number): Array<number> => {
   let left: number = 0;
   let right: number = nums.length;
 

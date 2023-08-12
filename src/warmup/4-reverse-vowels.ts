@@ -1,28 +1,24 @@
-const vowels = "aeiouAEIOU";
+const vowels: string = "aeiouAEIOU";
 
-const reverseVowels = function(s: string) {
-  // initialize pointers for start and end of the string
-  let first = 0;
-  let last = s.length - 1;
-  let array = s.split("");
+const reverseVowels = (s: string): string => {
+  let first: number = 0;
+  let last: number = s.length - 1;
+  let array: Array<string> = s.split("");
 
   while (first < last) {
-    // increment the start pointer until a vowel is found
     while (first < last && vowels.indexOf(array[first]) === -1) {
       first++;
     }
-    // decrement the end pointer until a vowel is found
     while (first < last && vowels.indexOf(array[last]) === -1) {
       last--;
     }
-    // swap the values of first and last if both are vowels
     [array[first], array[last]] = [array[last], array[first]];
-    // move the pointers towards the center
     first++;
     last--;
   }
 
-  return array.join("");
+  const reversed: string = array.join("");
+  return reversed;
 };
 
 // test cases

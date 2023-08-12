@@ -1,4 +1,4 @@
-var mySqrt = function(x: number) {
+const mySqrt = (x: number): number => {
   if (x < 2) {
     return x;
   }

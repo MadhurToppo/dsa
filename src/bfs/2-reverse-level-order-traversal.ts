@@ -24,7 +24,7 @@ const levelOrderTraversal = (root: TreeNode): Array<Array<number>> => {
       }
     }
 
-    result.push(currentLevel);
+    result.unshift(currentLevel);
   }
 
   return result;

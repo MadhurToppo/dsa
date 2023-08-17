@@ -1,7 +1,7 @@
-const containsDuplicate = (nums: Array<number>): boolean => {
+function containsDuplicate(nums: Array<number>): boolean {
   const unique: Set<number> = new Set(nums);
   return unique.size !== nums.length;
-};
+}
 
 const nums1: Array<number> = [1, 2, 3, 4];
 console.log(containsDuplicate(nums1)); // Expected output: false

@@ -1,6 +1,6 @@
-import TreeNode from "./tree.node";
+import TreeNode from "../common/tree.node";
 
-const maxDepthTree = (root: TreeNode): number => {
+function maxDepthTree(root: TreeNode): number {
   if (root === null) {
     return 0;
   }
@@ -24,7 +24,7 @@ const maxDepthTree = (root: TreeNode): number => {
     }
   }
   return maxDepth;
-};
+}
 
 // Test cases
 const root = new TreeNode(12);

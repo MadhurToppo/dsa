@@ -1,4 +1,4 @@
-import TreeNode from "./tree.node";
+import TreeNode from "../common/tree.node";
 
 const levelOrderSuccessor = (root: TreeNode, key: number) => {
   if (root === null) {

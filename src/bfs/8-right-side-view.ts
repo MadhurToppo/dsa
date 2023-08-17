@@ -1,6 +1,6 @@
-import TreeNode from "./tree.node";
+import TreeNode from "../common/tree.node";
 
-const getRightSideView = (root: TreeNode): Array<number> => {
+function getRightSideView(root: TreeNode): Array<number> {
   let result: Array<number> = new Array();
   if (root === null) {
     return result;
@@ -27,7 +27,7 @@ const getRightSideView = (root: TreeNode): Array<number> => {
   }
 
   return result;
-};
+}
 
 // Test cases
 const root = new TreeNode(12);

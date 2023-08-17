@@ -1,6 +1,6 @@
-import TreeNode from "./tree.node";
+import TreeNode from "../common/tree.node";
 
-const minDepthRootToLeaf = (root: TreeNode): number => {
+function minDepthRootToLeaf(root: TreeNode): number {
   if (root === null) {
     return 0;
   }
@@ -27,7 +27,7 @@ const minDepthRootToLeaf = (root: TreeNode): number => {
     }
   }
   return minDepth;
-};
+}
 
 // Test cases
 const root = new TreeNode(12);

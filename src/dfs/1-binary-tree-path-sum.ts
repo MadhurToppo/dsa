@@ -1,6 +1,6 @@
 import TreeNode from "../common/tree.node";
 
-const hasPath = (root: TreeNode | null, sum: number): boolean => {
+function hasPath(root: TreeNode | null, sum: number): boolean {
   if (root === null) {
     return false;
   }
@@ -12,7 +12,7 @@ const hasPath = (root: TreeNode | null, sum: number): boolean => {
   return (
     hasPath(root.left, sum - root.val) || hasPath(root.right, sum - root.val)
   );
-};
+}
 
 const root = new TreeNode(12);
 root.left = new TreeNode(7);

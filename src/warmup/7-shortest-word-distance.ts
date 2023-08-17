@@ -1,8 +1,8 @@
-const shortestDistance = (
+function shortestDistance(
   words: Array<string>,
   word1: string,
   word2: string,
-): number => {
+): number {
   let distance: number = words.length;
   let position1: number = -1;
   let position2: number = -1;
@@ -18,7 +18,7 @@ const shortestDistance = (
     }
   }
   return distance;
-};
+}
 
 // Test case 1
 const words1 = [

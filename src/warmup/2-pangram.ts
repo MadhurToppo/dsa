@@ -1,4 +1,4 @@
-const isPangram = (sentence: string): boolean => {
+function isPangram(sentence: string): boolean {
   let str: string = sentence.toLowerCase();
   let alphabet: Array<string> = "abcdefghijklmnopqrstuvwxyz".split("");
 
@@ -9,7 +9,7 @@ const isPangram = (sentence: string): boolean => {
   }
 
   return true;
-};
+}
 
 // Expected output: true
 console.log(isPangram("TheQuickBrownFoxJumpsOverTheLazyDog"));

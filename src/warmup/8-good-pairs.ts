@@ -1,4 +1,4 @@
-const numGoodPairs = (nums: Array<number>): number => {
+function numGoodPairs(nums: Array<number>): number {
   let pairCount = 0;
   let map: { [number: number]: number } = {};
   for (let n of nums) {
@@ -6,7 +6,7 @@ const numGoodPairs = (nums: Array<number>): number => {
     pairCount += map[n] - 1;
   }
   return pairCount;
-};
+}
 
 let result1 = numGoodPairs([1, 2, 3, 1, 1, 3]);
 console.log(`Result 1: ${result1} (Expected: 4)`);

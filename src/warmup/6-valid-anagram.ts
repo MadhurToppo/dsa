@@ -1,4 +1,4 @@
-const isAnagram = (s: string, t: string): boolean => {
+function isAnagram(s: string, t: string): boolean {
   if (s.length !== t.length) {
     return false;
   }
@@ -15,7 +15,7 @@ const isAnagram = (s: string, t: string): boolean => {
     }
   }
   return true;
-};
+}
 
 console.log(isAnagram("listen", "silent")); // Expected output: true
 console.log(isAnagram("hello", "world")); // Expected output: false

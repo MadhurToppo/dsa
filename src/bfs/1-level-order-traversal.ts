@@ -1,6 +1,6 @@
 import TreeNode from "../common/tree.node";
 
-const levelOrderTraversal = (root: TreeNode): Array<Array<number>> => {
+function levelOrderTraversal(root: TreeNode): Array<Array<number>> {
   let result: Array<Array<number>> = new Array();
   if (root === null) {
     return result;
@@ -28,7 +28,7 @@ const levelOrderTraversal = (root: TreeNode): Array<Array<number>> => {
   }
 
   return result;
-};
+}
 
 // Test cases
 const root = new TreeNode(12);

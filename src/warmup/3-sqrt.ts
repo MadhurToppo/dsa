@@ -1,4 +1,4 @@
-const mySqrt = (x: number): number => {
+function mySqrt(x: number): number {
   if (x < 2) {
     return x;
   }
@@ -21,7 +21,7 @@ const mySqrt = (x: number): number => {
   }
 
   return right;
-};
+}
 
 // test cases
 console.log(mySqrt(4)); // expected output: 2

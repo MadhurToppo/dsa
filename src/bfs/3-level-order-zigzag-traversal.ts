@@ -1,6 +1,6 @@
-import TreeNode from "./tree.node";
+import TreeNode from "../common/tree.node";
 
-const levelOrderZigzagTraversal = (root: TreeNode): Array<Array<number>> => {
+function levelOrderZigzagTraversal(root: TreeNode): Array<Array<number>> {
   let result: Array<Array<number>> = new Array();
   if (root === null) {
     return result;
@@ -34,7 +34,7 @@ const levelOrderZigzagTraversal = (root: TreeNode): Array<Array<number>> => {
   }
 
   return result;
-};
+}
 
 // Test cases
 const root = new TreeNode(12);

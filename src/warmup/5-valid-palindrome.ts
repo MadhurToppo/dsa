@@ -1,4 +1,4 @@
-const isPalindrome = (str: string): boolean => {
+function isPalindrome(str: string): boolean {
   let left: number = 0;
   let right: number = str.length - 1;
   const characters: Array<string> =
@@ -18,7 +18,7 @@ const isPalindrome = (str: string): boolean => {
     right--;
   }
   return true;
-};
+}
 
 // Test cases
 // Expected output: true

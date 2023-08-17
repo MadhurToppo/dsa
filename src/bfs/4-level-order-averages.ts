@@ -1,6 +1,6 @@
-import TreeNode from "./tree.node";
+import TreeNode from "../common/tree.node";
 
-const levelOrderAverages = (root: TreeNode): Array<number> => {
+function levelOrderAverages(root: TreeNode): Array<number> {
   let result: Array<number> = new Array();
   if (root === null) {
     return result;
@@ -28,7 +28,7 @@ const levelOrderAverages = (root: TreeNode): Array<number> => {
   }
 
   return result;
-};
+}
 
 // Test cases
 const root = new TreeNode(12);

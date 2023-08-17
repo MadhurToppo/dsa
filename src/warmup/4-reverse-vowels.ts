@@ -1,6 +1,6 @@
 const vowels: string = "aeiouAEIOU";
 
-const reverseVowels = (s: string): string => {
+function reverseVowels(s: string): string {
   let first: number = 0;
   let last: number = s.length - 1;
   let array: Array<string> = s.split("");
@@ -19,7 +19,7 @@ const reverseVowels = (s: string): string => {
 
   const reversed: string = array.join("");
   return reversed;
-};
+}
 
 // test cases
 const s1 = "hello";

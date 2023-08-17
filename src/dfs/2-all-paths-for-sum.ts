@@ -1,15 +1,15 @@
 import TreeNode from "../common/tree.node";
 
 function find_paths(root: TreeNode, sum: number): Array<Array<number>> {
-  let result: Array<Array<number>> = [];
-  find_paths_recursive(root, sum, [], result);
+  let result: Array<Array<number>> = new Array();
+  find_paths_recursive(root, sum, new Array(), result);
   return result;
 }
 
 function find_paths_recursive(
   current: TreeNode | null,
   sum: number,
-  path: any[],
+  path: Array<number>,
   all: Array<Array<number>>,
 ): void {
   if (current === null) {

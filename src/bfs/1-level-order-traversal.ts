@@ -1,4 +1,4 @@
-import TreeNode from "./tree.node";
+import TreeNode from "../common/tree.node";
 
 const levelOrderTraversal = (root: TreeNode): Array<Array<number>> => {
   let result: Array<Array<number>> = new Array();

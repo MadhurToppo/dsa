@@ -4,7 +4,9 @@
   "description": "",
   "scripts": {
     "build": "npm run clean && tsc",
-    "clean": "rimraf dist"
+    "clean": "rimraf dist",
+    "test": "mocha -r ts-node/register 'test/**/*.test.ts' --unhandled-rejections=strict",
+    "test-debug": "export DEBUG=* && npm test"
   },
   "repository": {
     "type": "git",
@@ -18,9 +20,17 @@
   },
   "homepage": "https://github.com/codesandbox-app/static-template#readme",
   "devDependencies": {
+    "@types/chai": "^4.3.6",
+    "@types/express": "^4.17.17",
+    "@types/mocha": "^10.0.1",
     "@types/node": "^20.4.9",
+    "@types/supertest": "^2.0.12",
+    "chai": "^4.3.8",
+    "mocha": "^10.2.0",
     "nodemon": "^3.0.1",
-    "rimraf": "^5.0.1"
+    "rimraf": "^5.0.1",
+    "supertest": "^6.3.3",
+    "ts-node": "^10.9.1"
   },
   "dependencies": {
     "@datastructures-js/priority-queue": "^6.3.0",

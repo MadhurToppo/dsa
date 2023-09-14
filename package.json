@@ -5,7 +5,7 @@
   "scripts": {
     "build": "npm run clean && tsc",
     "clean": "rimraf dist",
-    "test": "mocha -r ts-node/register 'test/**/*.test.ts' --unhandled-rejections=strict",
+    "test": "mocha -r ts-node/register 'test/**/*.tests.ts' --unhandled-rejections=strict",
     "test-debug": "export DEBUG=* && npm test"
   },
   "repository": {

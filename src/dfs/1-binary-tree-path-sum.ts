@@ -1,4 +1,4 @@
-import TreeNode from "../common/tree.node";
+import TreeNode from "@common/tree.node";
 
 function hasPath(root: TreeNode | null, sum: number): boolean {
   if (root === null) {

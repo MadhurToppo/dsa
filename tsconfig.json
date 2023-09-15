@@ -4,6 +4,12 @@
     "module": "commonjs",
     "outDir": "./dist",
     "strict": true,
+    "baseUrl": "src",
+    "paths": {
+      "@common/*": ["common/*"],
+      "@bfs/*": ["bfs/*"],
+      "@dfs/*": ["dfs/*"]
+    },
     "esModuleInterop": true,
     "inlineSourceMap": true
   }

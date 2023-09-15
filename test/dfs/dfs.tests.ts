@@ -1,8 +1,9 @@
 import { expect } from "chai";
-import { levelOrderTraversal } from "../../src/bfs/1-level-order-traversal";
-import TreeNode from "../../src/common/tree.node";
-import { invertTree } from "../../src/dfs/invert-binary-tree";
-import { maxDepth } from "../../src/dfs/max-depth";
+import { levelOrderTraversal } from "@bfs/1-level-order-traversal";
+import { invertTree } from "@dfs/invert-binary-tree";
+import { maxDepth } from "@dfs/max-depth";
+import TreeNode from "@common/tree.node";
+
 describe("DFS tests", function() {
   const root = new TreeNode(12);
   before(function() {

@@ -1,4 +1,4 @@
-import TreeNode from "../common/tree.node";
+import TreeNode from "@common/tree.node";
 
 function levelOrderAverages(root: TreeNode): Array<number> {
   let result: Array<number> = new Array();

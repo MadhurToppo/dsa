@@ -1,6 +1,7 @@
 import { expect } from "chai";
-import { levelOrderTraversal } from "../../src/bfs/1-level-order-traversal";
-import TreeNode from "../../src/common/tree.node";
+import { levelOrderTraversal } from "@bfs/1-level-order-traversal";
+import TreeNode from "@common/tree.node";
+
 describe("BFS tests", function() {
   context("level Order Traversal", function() {
     it("should traverse the binary tree level by level", function() {

@@ -5,7 +5,7 @@
   "scripts": {
     "build": "npm run clean && tsc",
     "clean": "rimraf dist",
-    "test": "mocha -r ts-node/register 'test/**/*.tests.ts' --unhandled-rejections=strict",
+    "test": "mocha -r ts-node/register -r tsconfig-paths/register 'test/**/*.tests.ts' --unhandled-rejections=strict",
     "test-debug": "export DEBUG=* && npm test"
   },
   "repository": {
@@ -34,6 +34,7 @@
   },
   "dependencies": {
     "@datastructures-js/priority-queue": "^6.3.0",
+    "tsconfig-paths": "^4.2.0",
     "typescript": "^5.1.6"
   }
 }

@@ -1,4 +1,4 @@
-import TreeNode from "../common/tree.node";
+import TreeNode from "@common/tree.node";
 
 function find_paths(root: TreeNode, sum: number): Array<Array<number>> {
   let result: Array<Array<number>> = new Array();

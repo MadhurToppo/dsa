@@ -1,6 +1,6 @@
 import TreeNode from "@common/tree.node";
 
-function levelOrderAverages(root: TreeNode): Array<number> {
+export function levelOrderAverages(root: TreeNode): Array<number> {
   let result: Array<number> = new Array();
   if (root === null) {
     return result;
@@ -29,13 +29,3 @@ function levelOrderAverages(root: TreeNode): Array<number> {
 
   return result;
 }
-
-// Test cases
-const root = new TreeNode(12);
-root.left = new TreeNode(7);
-root.right = new TreeNode(1);
-root.left.left = new TreeNode(9);
-root.left.right = new TreeNode(2);
-root.right.left = new TreeNode(10);
-root.right.right = new TreeNode(5);
-console.log(levelOrderAverages(root));

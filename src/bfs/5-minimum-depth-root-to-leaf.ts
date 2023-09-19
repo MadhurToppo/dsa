@@ -1,6 +1,6 @@
 import TreeNode from "@common/tree.node";
 
-function minDepthRootToLeaf(root: TreeNode): number {
+export function minDepthRootToLeaf(root: TreeNode): number {
   if (root === null) {
     return 0;
   }
@@ -28,14 +28,3 @@ function minDepthRootToLeaf(root: TreeNode): number {
   }
   return minDepth;
 }
-
-// Test cases
-const root = new TreeNode(12);
-root.left = new TreeNode(7);
-root.right = new TreeNode(1);
-root.right.left = new TreeNode(10);
-root.right.right = new TreeNode(5);
-console.log(minDepthRootToLeaf(root));
-root.left.left = new TreeNode(9);
-root.right.left.left = new TreeNode(11);
-console.log(minDepthRootToLeaf(root));

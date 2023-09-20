@@ -1,8 +1,8 @@
 import TreeNode from "@common/tree.node";
 
-export function invertTree(root: TreeNode | null): TreeNode {
+export function invertTree(root: TreeNode | null): TreeNode | null {
   if (!root) {
-    return new TreeNode(0);
+    return null;
   }
   let temp = root.right;
   root.right = root.left;

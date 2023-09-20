@@ -1,6 +1,8 @@
 import TreeNode from "@common/tree.node";
 
-export function levelOrderTraversal(root: TreeNode): Array<Array<number>> {
+export function levelOrderTraversal(
+  root: TreeNode | null,
+): Array<Array<number>> {
   let result: Array<Array<number>> = new Array();
   if (root === null) {
     return result;

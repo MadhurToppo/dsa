@@ -1,4 +1,4 @@
-function isAnagram(s: string, t: string): boolean {
+export function isAnagram(s: string, t: string): boolean {
   if (s.length !== t.length) {
     return false;
   }
@@ -16,9 +16,3 @@ function isAnagram(s: string, t: string): boolean {
   }
   return true;
 }
-
-console.log(isAnagram("listen", "silent")); // Expected output: true
-console.log(isAnagram("hello", "world")); // Expected output: false
-console.log(isAnagram("anagram", "nagram")); // Expected output: true
-console.log(isAnagram("rat", "car")); // Expected output: false
-console.log(isAnagram("", "")); // Expected output: true

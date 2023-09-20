@@ -1,4 +1,4 @@
-function mySqrt(x: number): number {
+export function mySqrt(x: number): number {
   if (x < 2) {
     return x;
   }
@@ -22,10 +22,3 @@ function mySqrt(x: number): number {
 
   return right;
 }
-
-// test cases
-console.log(mySqrt(4)); // expected output: 2
-console.log(mySqrt(8)); // expected output: 2
-console.log(mySqrt(2)); // expected output: 1
-console.log(mySqrt(3)); // expected output: 1
-console.log(mySqrt(15)); // expected output: 3

@@ -1,4 +1,4 @@
-function threeSum(nums: number[]): number[][] {
+export function threeSum(nums: number[]): number[][] {
   nums.sort((a, b) => a - b);
   const result: number[][] = [];
 
@@ -27,6 +27,3 @@ function threeSum(nums: number[]): number[][] {
 
   return result;
 }
-
-console.log(threeSum([-3, 0, 1, 2, -1, 1, -2]));
-console.log(threeSum([-5, 2, -1, -2, 3]));

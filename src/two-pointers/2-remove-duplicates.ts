@@ -1,4 +1,4 @@
-function remove_duplicates(arr: number[]) {
+export function remove_duplicates(arr: number[]) {
   let nextNonDuplicate = 1;
 
   let i = 0;
@@ -12,7 +12,3 @@ function remove_duplicates(arr: number[]) {
 
   return nextNonDuplicate;
 }
-
-
-console.log(remove_duplicates([2, 3, 3, 3, 6, 9, 9]));
-console.log(remove_duplicates([2, 2, 2, 11]));

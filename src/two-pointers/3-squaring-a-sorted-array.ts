@@ -1,4 +1,4 @@
-function make_squares(arr: number[]) {
+export function make_squares(arr: number[]) {
   const n = arr.length;
   let squares = Array(n).fill(0);
   let highestSquareIdx = n - 1;
@@ -18,6 +18,3 @@ function make_squares(arr: number[]) {
   }
   return squares;
 }
-
-console.log(`Squares: ${make_squares([-2, -1, 0, 2, 3])}`);
-console.log(`Squares: ${make_squares([-3, -1, 0, 1, 2])}`);

@@ -1,4 +1,4 @@
-function dutch_flag_sort(nums: number[]): void {
+export function dutch_flag_sort(nums: number[]): Array<number> {
   let p0 = 0,
     p2 = nums.length - 1,
     curr = 0;
@@ -13,6 +13,8 @@ function dutch_flag_sort(nums: number[]): void {
       p2--;
     } else curr++;
   }
+
+  return nums;
 }
 
 function swap(a: number, b: number, nums: number[]): void {
@@ -22,11 +24,3 @@ function swap(a: number, b: number, nums: number[]): void {
     nums[b] = temp;
   }
 }
-
-let arr = [1, 0, 2, 1, 0];
-dutch_flag_sort(arr);
-console.log(arr);
-
-arr = [2, 2, 0, 1, 2, 0];
-dutch_flag_sort(arr);
-console.log(arr);

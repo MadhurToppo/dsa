@@ -1,4 +1,4 @@
-function getTwoSum(nums: Array<number>, target: number): Array<number> {
+export function getTwoSum(nums: Array<number>, target: number): Array<number> {
   let left: number = 0;
   let right: number = nums.length;
 
@@ -15,6 +15,3 @@ function getTwoSum(nums: Array<number>, target: number): Array<number> {
   }
   return [-1, -1];
 }
-
-console.log(getTwoSum([1, 2, 3, 4, 6], 6));
-console.log(getTwoSum([2, 5, 9, 11], 11));

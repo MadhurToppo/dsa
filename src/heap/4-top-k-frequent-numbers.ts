@@ -1,6 +1,9 @@
 import { PriorityQueue } from "@datastructures-js/priority-queue";
 
-function topKFrequentNumbers(nums: Array<number>, k: number): Array<number> {
+export function topKFrequentNumbers(
+  nums: Array<number>,
+  k: number,
+): Array<number> {
   const map = nums.reduce((freq, num) => {
     return freq.set(num, (freq.get(num) || 0) + 1);
   }, new Map<number, number>());
@@ -13,6 +16,3 @@ function topKFrequentNumbers(nums: Array<number>, k: number): Array<number> {
   );
   return maxHeap.toArray().slice(0, k);
 }
-
-console.log(topKFrequentNumbers([1, 3, 5, 12, 11, 12, 11], 2));
-console.log(topKFrequentNumbers([1, 3, 5, 12, 11, 12, 11, -3, -3, -3, -3], 2));

@@ -6,7 +6,11 @@
     "build": "npm run clean && tsc",
     "clean": "rimraf dist",
     "test": "mocha -r ts-node/register -r tsconfig-paths/register 'test/**/*.tests.ts' --unhandled-rejections=strict",
-    "test-debug": "export DEBUG=* && npm test"
+    "test-debug": "export DEBUG=* && npm test",
+    "format:check": "prettier --check .",
+    "format:write": "prettier --write .",
+    "lint:check": "eslint .",
+    "lint:fix": "eslint --fix ."
   },
   "repository": {
     "type": "git",

@@ -19,7 +19,7 @@ export function dutch_flag_sort(nums: number[]): Array<number> {
 
 function swap(a: number, b: number, nums: number[]): void {
   if (a !== b) {
-    let temp = nums[a];
+    const temp = nums[a];
     nums[a] = nums[b];
     nums[b] = temp;
   }

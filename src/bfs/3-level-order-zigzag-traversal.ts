@@ -3,20 +3,20 @@ import TreeNode from "@common/tree.node";
 export function levelOrderZigzagTraversal(
   root: TreeNode,
 ): Array<Array<number>> {
-  let result: Array<Array<number>> = new Array();
+  const result: Array<Array<number>> = [];
   if (root === null) {
     return result;
   }
 
-  const queue: Array<TreeNode> = new Array();
+  const queue: Array<TreeNode> = [];
   queue.push(root);
   let leftToRight: boolean = true;
   while (queue.length > 0) {
     const levelSize: number = queue.length;
-    let currentLevel: Array<number> = new Array();
+    const currentLevel: Array<number> = [];
 
     for (let i = 0; i < levelSize; i++) {
-      let currentNode: TreeNode | undefined = queue.shift();
+      const currentNode: TreeNode | undefined = queue.shift();
 
       if (leftToRight) {
         currentLevel.push(currentNode!.val);

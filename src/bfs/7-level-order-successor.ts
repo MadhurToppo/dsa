@@ -8,11 +8,11 @@ export function levelOrderSuccessor(
     return null;
   }
 
-  const queue: Array<TreeNode> = new Array();
+  const queue: Array<TreeNode> = [];
   queue.push(root);
 
   while (queue.length > 0) {
-    let currentNode: TreeNode | undefined = queue.shift();
+    const currentNode: TreeNode | undefined = queue.shift();
     if (currentNode!.left !== null) {
       queue.push(currentNode!.left);
     }

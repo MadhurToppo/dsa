@@ -1,8 +1,8 @@
 import TreeNode from "@common/tree.node";
 
 export function findPaths(root: TreeNode, sum: number): Array<Array<number>> {
-  let result: Array<Array<number>> = new Array();
-  findPathsRecursive(root, sum, new Array(), result);
+  const result: Array<Array<number>> = [];
+  findPathsRecursive(root, sum, [], result);
   return result;
 }
 

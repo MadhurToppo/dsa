@@ -5,7 +5,7 @@ export function minDepthRootToLeaf(root: TreeNode): number {
     return 0;
   }
 
-  const queue: Array<TreeNode> = new Array();
+  const queue: Array<TreeNode> = [];
   queue.push(root);
   let minDepth = 0;
 
@@ -14,7 +14,7 @@ export function minDepthRootToLeaf(root: TreeNode): number {
     const levelSize: number = queue.length;
 
     for (let i = 0; i < levelSize; i++) {
-      let currentNode: TreeNode | undefined = queue.shift();
+      const currentNode: TreeNode | undefined = queue.shift();
       if (currentNode?.left === null && currentNode.right === null) {
         return minDepth;
       }

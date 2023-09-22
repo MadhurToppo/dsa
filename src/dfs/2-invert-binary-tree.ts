@@ -4,7 +4,7 @@ export function invertTree(root: TreeNode | null): TreeNode | null {
   if (!root) {
     return null;
   }
-  let temp = root.right;
+  const temp = root.right;
   root.right = root.left;
   root.left = temp;
 

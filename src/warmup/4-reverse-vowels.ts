@@ -2,7 +2,7 @@ export function reverseVowels(s: string): string {
   const vowels: string = "aeiouAEIOU";
   let first: number = 0;
   let last: number = s.length - 1;
-  let array: Array<string> = s.split("");
+  const array: Array<string> = s.split("");
 
   while (first < last) {
     while (first < last && vowels.indexOf(array[first]) === -1) {

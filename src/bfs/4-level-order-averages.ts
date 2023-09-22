@@ -1,12 +1,12 @@
 import TreeNode from "@common/tree.node";
 
 export function levelOrderAverages(root: TreeNode): Array<number> {
-  let result: Array<number> = new Array();
+  const result: Array<number> = [];
   if (root === null) {
     return result;
   }
 
-  const queue: Array<TreeNode> = new Array();
+  const queue: Array<TreeNode> = [];
   queue.push(root);
 
   while (queue.length > 0) {
@@ -14,7 +14,7 @@ export function levelOrderAverages(root: TreeNode): Array<number> {
     let sum = 0;
 
     for (let i = 0; i < levelSize; i++) {
-      let currentNode: TreeNode | undefined = queue.shift();
+      const currentNode: TreeNode | undefined = queue.shift();
       sum += currentNode!.val;
       if (currentNode!.left !== null) {
         queue.push(currentNode!.left);
